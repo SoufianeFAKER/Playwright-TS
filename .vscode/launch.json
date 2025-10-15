@@ -1,0 +1,37 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug Playwright Test",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable":"npx",
+            "runtimeArgs": ["playwrihght", "test", "${file}", "--project=chromium", "--headed", "--debug"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            // "env": {
+            //     "DEBUG": "pw:api"
+            // }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Lancer le programme",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\tests\\home.spec.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+            // ,
+            // "env": {
+            //     "DEBUG": "pw:api"
+            // }
+        }
+    ]
+}

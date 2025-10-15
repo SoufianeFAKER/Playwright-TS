@@ -1,0 +1,11 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.399420999999997">
+<testsuite name="contact.spec.ts" timestamp="2025-10-15T08:54:07.280Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.547" errors="0">
+<testcase name="Contact Page › Fill contact form and verify success message" classname="contact.spec.ts" time="7.547">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\contact-Contact-Page-Fill--cbb33--and-verify-success-message-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
