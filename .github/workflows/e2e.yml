@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test-e2e:
     name: Run E2E tests
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
@@ -15,9 +15,3 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run your tests
         run: npx playwright test tests/home.spec.ts
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test Results
-          path: test-results
