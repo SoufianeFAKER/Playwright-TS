@@ -14,7 +14,7 @@ class HomePage {
     this.headingText = page.locator("text=Think different. Make different.");
     this.homeLink = page.locator('#menu-item-489:has-text("Home")');
     this.searchIcon = page.locator(
-      "//div[@class='zak-header-actions zak-header-actions--desktop']//a[@class='zak-header-search__toggle']//*[name()='svg']"
+      "//div[@class='ak-header-actions zak-header-actions--desktop']//a[@class='zak-header-search__toggle']//*[name()='svg']"
     );
     this.navLinks = page.locator("#zak-primary-menu li[id*=menu]")
   }
